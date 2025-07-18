@@ -1,0 +1,23 @@
+{
+  "id": "reform-denpasar-003",
+  "object_type": "ReformVariant",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-16 16:39:18.139645",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "ReformVariant",
+    "reform_id": "reform-denpasar-003",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "title": "Standardized Grid Interconnection Templates for BESS",
+    "reform_type": "technical_streamlining",
+    "original_module_id": "mod-denpasar-grid-coordination",
+    "proposed_changes": {
+      "template_protocol_enabled": true,
+      "estimated_days_saved": 30
+    }
+  }
+}

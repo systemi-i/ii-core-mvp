@@ -1,0 +1,32 @@
+[
+  {
+    "object_type": "TemporalConstraint",
+    "module_ids": ["mod-denpasar-site-control", "mod-denpasar-environmental-assessment"],
+    "type": "must_finish_before",
+    "rationale": "Zoning clearance is required before environmental documentation can be formally reviewed or accepted."
+  },
+  {
+    "object_type": "TemporalConstraint",
+    "module_ids": ["mod-denpasar-environmental-assessment", "mod-denpasar-construction-authorization"],
+    "type": "must_finish_before",
+    "rationale": "Construction permits cannot be issued before the environmental review is approved (AMDAL approval is a legal precondition)."
+  },
+  {
+    "object_type": "TemporalConstraint",
+    "module_ids": ["mod-denpasar-technical-compliance", "mod-denpasar-final-inspections"],
+    "type": "must_finish_before",
+    "rationale": "All imported equipment must receive SNI certification prior to the final SLO inspection and commissioning."
+  },
+  {
+    "object_type": "TemporalConstraint",
+    "module_ids": ["mod-denpasar-grid-coordination", "mod-denpasar-electrical-agreement"],
+    "type": "must_finish_before",
+    "rationale": "PLN must complete the technical grid study before contract terms for injection, pricing, and dispatch can be negotiated."
+  },
+  {
+    "object_type": "TemporalConstraint",
+    "module_ids": ["mod-denpasar-final-inspections", "mod-denpasar-post-permit-monitoring"],
+    "type": "must_finish_before",
+    "rationale": "Post-permit monitoring can only begin once the project has been commissioned and synchronized to the grid."
+  }
+]

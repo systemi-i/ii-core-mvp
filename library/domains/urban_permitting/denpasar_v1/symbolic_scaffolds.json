@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ss-denpasar-001",
+    "object_type": "SymbolicScaffold",
+    "scaffold_id": "ss-denpasar-001",
+    "module_id": "mod-denpasar-public-consultation",
+    "type": "public ritual",
+    "description": "The AMDAL public hearing functions as a performative moment of environmental legitimacy. Local leaders, media, and NGOs may attend, and the hearing chair signals formal inclusion of affected communities.",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1"
+  },
+  {
+    "id": "ss-denpasar-002",
+    "object_type": "SymbolicScaffold",
+    "scaffold_id": "ss-denpasar-002",
+    "module_id": "mod-denpasar-symbolic-clearance",
+    "type": "customary blessing",
+    "description": "Village-level blessing ceremonies or informal consent meetings serve as ritualized approvals. These events are not legal prerequisites but often dictate whether the project can physically proceed.",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1"
+  },
+  {
+    "id": "ss-denpasar-003",
+    "object_type": "SymbolicScaffold",
+    "scaffold_id": "ss-denpasar-003",
+    "module_id": "mod-denpasar-construction-authorization",
+    "type": "executive alignment signal",
+    "description": "When a permit is issued by Denpasar PUPR under mayoral instruction, it is often framed publicly as a strategic investment initiative — anchoring institutional support beyond the project’s technical merit.",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1"
+  },
+  {
+    "id": "ss-denpasar-004",
+    "object_type": "SymbolicScaffold",
+    "scaffold_id": "ss-denpasar-004",
+    "module_id": "mod-denpasar-technical-compliance",
+    "type": "formal sector inscription",
+    "description": "The issuance of the IUJPTL license from MEMR signals a project’s transformation into a formal, state-recognized energy actor — anchoring legal identity and system trustworthiness.",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1"
+  },
+  {
+    "id": "ss-denpasar-005",
+    "object_type": "SymbolicScaffold",
+    "scaffold_id": "ss-denpasar-005",
+    "module_id": "mod-denpasar-final-inspections",
+    "type": "system entry threshold",
+    "description": "The SLO certificate functions not only as a safety pass but as a symbolic rite of passage: the BESS becomes part of the national grid and is formally authorized to deliver value.",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1"
+  }
+]

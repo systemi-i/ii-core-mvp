@@ -1,0 +1,19 @@
+{
+  "id": "auto-5717dd5f",
+  "object_type": "TemporalConstraint",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-16 10:14:58.026947",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "TemporalConstraint",
+    "module_ids": [
+      "mod-denpasar-grid-coordination",
+      "mod-denpasar-electrical-agreement"
+    ],
+    "type": "must_finish_before",
+    "rationale": "PLN must complete the technical grid study before contract terms for injection, pricing, and dispatch can be negotiated."
+  }
+}

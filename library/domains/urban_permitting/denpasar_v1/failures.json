@@ -1,0 +1,74 @@
+[
+  {
+    "object_type": "FailureEvent",
+    "failure_id": "failure-denpasar-001",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-environmental-assessment",
+    "failure_title": "AMDAL Loopback Delay",
+    "failure_type": "delay",
+    "failure_signature": ["multi_revision_cycle"],
+    "severity_rating": 0.7,
+    "description": "AMDAL documents are repeatedly returned for revision due to incomplete mitigation plans or classification disputes. No hard cap on number of review cycles."
+  },
+  {
+    "object_type": "FailureEvent",
+    "failure_id": "failure-denpasar-002",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-grid-coordination",
+    "failure_title": "PLN Study Indecision",
+    "failure_type": "rework",
+    "failure_signature": ["design_iteration_request", "queue_opacity"],
+    "severity_rating": 0.6,
+    "description": "PLN UID returns feasibility study with vague conditions or demands redesign. Developers often lack insight into grid queue, resulting in rework or abandonment."
+  },
+  {
+    "object_type": "FailureEvent",
+    "failure_id": "failure-denpasar-003",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-electrical-agreement",
+    "failure_title": "Unresolved Contract Terms",
+    "failure_type": "stall",
+    "failure_signature": ["pricing_uncertainty", "dispatch_rights_ambiguity"],
+    "severity_rating": 0.5,
+    "description": "PLN and developer cannot agree on contract model for BESS services. No clear tariff reference exists, and negotiations are open-ended."
+  },
+  {
+    "object_type": "FailureEvent",
+    "failure_id": "failure-denpasar-004",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-technical-compliance",
+    "failure_title": "SNI Certification Bottleneck",
+    "failure_type": "technical_delay",
+    "failure_signature": ["lab_queue", "import_equipment_mismatch"],
+    "severity_rating": 0.6,
+    "description": "Battery and inverter components face long delays in certification due to SNI lab backlogs or technical mismatch with Indonesian standards."
+  },
+  {
+    "object_type": "FailureEvent",
+    "failure_id": "failure-denpasar-005",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-public-consultation",
+    "failure_title": "Public Hearing Escalation",
+    "failure_type": "political_delay",
+    "failure_signature": ["hearing_triggered", "community_opposition"],
+    "severity_rating": 0.5,
+    "description": "Hearing is triggered due to pressure from local NGOs or villagers. Opposition leads to project redesign or reputational damage."
+  },
+  {
+    "object_type": "FailureEvent",
+    "failure_id": "failure-denpasar-006",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-symbolic-clearance",
+    "failure_title": "Village Consent Withheld",
+    "failure_type": "soft_block",
+    "failure_signature": ["informal_veto", "unrecognized_rights"],
+    "severity_rating": 0.4,
+    "description": "Project is informally blocked by village council or customary actors. Despite having legal entitlement, site access is obstructed or contested."
+  }
+]

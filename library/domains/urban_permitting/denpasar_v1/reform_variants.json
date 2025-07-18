@@ -1,0 +1,55 @@
+[
+  {
+    "object_type": "ReformVariant",
+    "reform_id": "reform-denpasar-001",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "title": "Parallel Grid + Environmental Reviews",
+    "reform_type": "coordination_protocol",
+    "original_module_id": "mod-denpasar-grid-coordination",
+    "proposed_changes": {
+      "process_change": "Enable concurrent PLN study and AMDAL review via shared data intake forms and OSS coordination",
+      "estimated_days_saved": 60
+    }
+  },
+  {
+    "object_type": "ReformVariant",
+    "reform_id": "reform-denpasar-002",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "title": "Deemed AMDAL Approval (120-Day Default)",
+    "reform_type": "statutory_timer",
+    "original_module_id": "mod-denpasar-environmental-assessment",
+    "proposed_changes": {
+      "default_approval_timer": "120_days",
+      "estimated_days_saved": 45
+    }
+  },
+  {
+    "object_type": "ReformVariant",
+    "reform_id": "reform-denpasar-003",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "title": "Standardized Grid Interconnection Templates for BESS",
+    "reform_type": "technical_streamlining",
+    "original_module_id": "mod-denpasar-grid-coordination",
+    "proposed_changes": {
+      "template_protocol_enabled": true,
+      "estimated_days_saved": 30
+    }
+  },
+  {
+    "object_type": "ReformVariant",
+    "reform_id": "reform-denpasar-004",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "title": "Digital Consolidation of Construction Permits",
+    "reform_type": "interface_integration",
+    "original_module_id": "mod-denpasar-construction-authorization",
+    "proposed_changes": {
+      "digital_integration": "multi-permit routing via OSS",
+      "estimated_days_saved": 20
+    }
+  }
+]
+

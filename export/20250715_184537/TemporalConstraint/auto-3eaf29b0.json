@@ -1,0 +1,19 @@
+{
+  "id": "auto-3eaf29b0",
+  "object_type": "TemporalConstraint",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:45:37.812720",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "TemporalConstraint",
+    "module_ids": [
+      "mod-denpasar-final-inspections",
+      "mod-denpasar-post-permit-monitoring"
+    ],
+    "type": "must_finish_before",
+    "rationale": "Post-permit monitoring can only begin once the project has been commissioned and synchronized to the grid."
+  }
+}

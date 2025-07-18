@@ -1,0 +1,51 @@
+{
+  "id": "mod-denpasar-post-permit-monitoring",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:16:10.022712",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-post-permit-monitoring",
+    "module_name": "Post-Permit Monitoring",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 7,
+    "actor_responsible": "MEMR",
+    "actor_type": "national_agency",
+    "procedure_type": "audit + compliance tracking",
+    "linked_functional_modules": [
+      "Environmental Assessment",
+      "Final Inspections & Operational Licensing"
+    ],
+    "temporal_rhythm": "episodic",
+    "description": "Covers MEMR\u2019s post-commissioning oversight, including environmental condition compliance, operational status reporting, and spot audits of license adherence.",
+    "functional_role": "ongoing legitimacy and enforcement interface",
+    "duration_days": 90,
+    "symbolic_risks": [
+      "non_enforcement",
+      "license_violation_inertia"
+    ],
+    "grammar_lines": [
+      "MEMR:Initiate[Audit]{If Operational}(Periodic)",
+      "Developer:Submit[Compliance_Report]{If Requested}(Reactive)",
+      "MEMR:Issue[Warning_Or_Sanction]{If Violation_Found}(Discretionary)"
+    ],
+    "dependencies": [
+      "mod-denpasar-final-inspections"
+    ],
+    "notes": {
+      "informal_notes": "Monitoring depends on capacity and political priority. In practice, many BESS projects operate with minimal follow-up unless complaints are filed or problems emerge.",
+      "symbolic_scaffold": "Post-permit monitoring sustains the project\u2019s legitimacy \u2014 especially relevant for international funders and ESG-linked financing vehicles.",
+      "feedback_structure": "Non-compliance often leads to informal warnings before formal action. Enforcement varies across regions and technologies.",
+      "failure_modes": [
+        "Failure to submit required compliance documents",
+        "Silent permit condition violations (e.g. no waste battery tracking)",
+        "MEMR audit capacity bottleneck"
+      ]
+    }
+  }
+}

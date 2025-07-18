@@ -1,0 +1,53 @@
+{
+  "id": "mod-denpasar-final-inspections",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:38:13.730430",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-final-inspections",
+    "module_name": "Final Inspections & Operational Licensing",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 6,
+    "actor_responsible": "Licensed Electrical Inspector",
+    "actor_type": "certified_professional",
+    "procedure_type": "compliance_verification",
+    "linked_functional_modules": [
+      "Technical Design & Compliance",
+      "Grid Coordination & Interconnection"
+    ],
+    "temporal_rhythm": "fixed_check",
+    "description": "Performs field inspection and issues the Operation Worthiness Certificate (SLO), followed by grid synchronization approval from PLN.",
+    "functional_role": "final safety sign-off and grid entry",
+    "duration_days": 30,
+    "symbolic_risks": [
+      "rejection_due_to_installation_deviation",
+      "late_discovery_of_missing_certification"
+    ],
+    "grammar_lines": [
+      "Developer:Request[Electrical_Inspection]{If Construction_Complete}(Mandatory)",
+      "Inspector:Issue[SLO_Certificate]{If Code_Compliant}(Binary)",
+      "PLN:Authorize[Grid_Synchronization]{If SLO_Issued}(Final)"
+    ],
+    "dependencies": [
+      "mod-denpasar-construction-authorization",
+      "mod-denpasar-technical-compliance",
+      "mod-denpasar-grid-coordination"
+    ],
+    "notes": {
+      "informal_notes": "The SLO process is usually predictable but can be delayed if construction deviates from submitted designs or if imported components lack final certification.",
+      "symbolic_scaffold": "SLO is the legal and symbolic marker of \u2018grid readiness\u2019 \u2014 the moment at which the project is treated as a real actor in the energy system.",
+      "feedback_structure": "If rejected, the inspector issues a corrective request. Feedback is formalized but brief.",
+      "failure_modes": [
+        "Failed inspection due to grounding or enclosure noncompliance",
+        "Missing SNI documentation discovered at final stage",
+        "PLN delay in assigning synchronization window"
+      ]
+    }
+  }
+}

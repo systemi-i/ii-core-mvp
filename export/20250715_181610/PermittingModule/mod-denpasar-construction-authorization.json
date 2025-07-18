@@ -1,0 +1,52 @@
+{
+  "id": "mod-denpasar-construction-authorization",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:16:10.022712",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-construction-authorization",
+    "module_name": "Construction Authorization",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 5,
+    "actor_responsible": "Denpasar PUPR",
+    "actor_type": "municipal_agency",
+    "procedure_type": "engineering_verification",
+    "linked_functional_modules": [
+      "Environmental Assessment",
+      "Final Inspections & Operational Licensing"
+    ],
+    "temporal_rhythm": "dependent_gate",
+    "description": "Grants the legal right to begin physical construction of the BESS facility. Requires prior environmental clearance and approved site and structural plans.",
+    "functional_role": "infrastructure compliance and safety clearance",
+    "duration_days": 45,
+    "symbolic_risks": [
+      "zoning_misalignment_delay",
+      "document_inconsistency_flag"
+    ],
+    "grammar_lines": [
+      "Developer:Submit[Building_Permit_Application]{If AMDAL_Approved}(Mandatory)",
+      "Denpasar_PUPR:Review[Design_And_Site](Sequential)",
+      "Denpasar_PUPR:Issue[Construction_Permit]{If Code_Compliant}(Final)"
+    ],
+    "dependencies": [
+      "mod-denpasar-environmental-assessment",
+      "mod-denpasar-site-control"
+    ],
+    "notes": {
+      "informal_notes": "Delays arise from ambiguity in drawings, absence of standard templates for BESS structures, and occasional political interference.",
+      "symbolic_scaffold": "The construction permit marks a highly visible transition point \u2014 moving from planning to physical presence. Local governments often signal development alignment here.",
+      "feedback_structure": "PUPR may request adjustments but rarely provides proactive guidance. Informal broker mediation common.",
+      "failure_modes": [
+        "Permit suspended pending environmental document clarification",
+        "Misalignment between grid location and civil site plan",
+        "Intervention from local actors citing nuisance or zoning objections"
+      ]
+    }
+  }
+}

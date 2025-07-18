@@ -1,0 +1,26 @@
+{
+  "id": "composition-test-empty",
+  "object_type": "Composition",
+  "jurisdiction": "Testland",
+  "version": "v1",
+  "created_on": "2025-07-16 16:38:11.607338",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "id": "composition-test-empty",
+    "object_type": "Composition",
+    "jurisdiction": "Testland",
+    "version": "v1",
+    "created_on": "2025-07-16T00:00:00",
+    "created_by": "tester",
+    "tags": [],
+    "data": {
+      "title": "Test Empty Flow",
+      "jurisdiction": "Testland",
+      "modules": [],
+      "edges": [],
+      "created_by": "tester"
+    }
+  }
+}

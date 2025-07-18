@@ -1,0 +1,26 @@
+{
+  "id": "mod-denpasar-grid-coordination",
+  "object_type": "OverrideProtocol",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 17:07:56.864066",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "OverrideProtocol",
+    "override_id": "override-denpasar-002",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-grid-coordination",
+    "override_title": "Template-Based Grid Study Bypass",
+    "override_type": "technical_substitution",
+    "actor_triggering": "PLN UID Bali",
+    "trigger_condition": {
+      "type": "design_match",
+      "value": "PLN-approved BESS interconnect template"
+    },
+    "legitimacy_source": "internal PLN engineering memo (pilot framework)",
+    "description": "If the submitted project matches a pre-approved BESS system configuration, PLN may waive the full study and issue immediate feasibility clearance."
+  }
+}

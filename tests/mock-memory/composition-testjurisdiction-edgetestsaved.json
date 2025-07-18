@@ -1,0 +1,42 @@
+{
+  "id": "composition-testjurisdiction-edgetestsaved",
+  "object_type": "Composition",
+  "jurisdiction": "TestJurisdiction",
+  "version": "v1",
+  "created_on": "2025-07-17 16:14:07.068451",
+  "created_by": "test-user",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "title": "EdgeTestSaved",
+    "jurisdiction": "TestJurisdiction",
+    "modules": [
+      "mod-A",
+      "mod-B"
+    ],
+    "edges": [
+      {
+        "from_node": "mod-A",
+        "to_node": "mod-B",
+        "type": "dependency",
+        "label": null,
+        "tags": [],
+        "condition": null,
+        "relation": null,
+        "rationale": null,
+        "override_id": null,
+        "trigger_condition": null,
+        "override_action": null,
+        "tag": null,
+        "required_actor": null,
+        "generated_by": null,
+        "confidence": null
+      }
+    ],
+    "symbolic_scaffolds": [],
+    "override_protocols": [],
+    "feedback_loops": [],
+    "failure_events": [],
+    "created_by": "test-user"
+  }
+}

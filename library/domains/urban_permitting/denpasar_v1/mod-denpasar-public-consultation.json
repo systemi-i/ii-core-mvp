@@ -1,0 +1,42 @@
+{
+  "object_type": "PermittingModule",
+  "module_id": "mod-denpasar-public-consultation",
+  "module_name": "Public Consultation / Appeals",
+  "jurisdiction": "Denpasar",
+  "jurisdiction_version": "v1",
+  "sequence_order": 2.1,
+  "actor_responsible": "AMDAL Commission (Bali)",
+  "actor_type": "multi_agency_body",
+  "procedure_type": "deliberative + grievance",
+  "linked_functional_modules": [
+    "Environmental Assessment",
+    "Post-Permit Monitoring"
+  ],
+  "temporal_rhythm": "conditional_event",
+  "description": "Handles the formal and informal public engagement moments during AMDAL review. May trigger public hearings, grievance response loops, or community escalations.",
+  "functional_role": "social license and legitimacy layer",
+  "duration_days": 45,
+  "symbolic_risks": [
+    "consultation_capture",
+    "silent_opposition_backlash"
+  ],
+  "grammar_lines": [
+    "DLH_Bali:Trigger[Public_Hearing]{If Impact_Level > Threshold OR Objection_Received}(Conditional)",
+    "Community_Stakeholders:Submit[Comments_Or_Objections]{If Engagement_Offered}(Optional)",
+    "AMDAL_Commission:Incorporate[Public_Inputs]{If Material}(Discretionary)",
+    "Developer:Revise[Project_Design]{If Hearing_Feedback_Negative}(Loop)"
+  ],
+  "dependencies": [
+    "mod-denpasar-environmental-assessment"
+  ],
+  "notes": {
+    "informal_notes": "Although hearings are legally required only above a threshold, local NGOs or political actors can pressure the commission to hold them. Villages may treat participation as entitlement.",
+    "symbolic_scaffold": "Hearings serve as rituals of legitimacy, especially when chaired by respected figures or covered by local media.",
+    "feedback_structure": "Public feedback is captured in formal records, but incorporation is uneven. DLH may act as filter, shaping what reaches decision-makers.",
+    "failure_modes": [
+      "Hearing process hijacked by rival land interests",
+      "Community boycott or protest due to perceived lack of benefit",
+      "Delays due to conflicting interpretations of participation rules"
+    ]
+  }
+}

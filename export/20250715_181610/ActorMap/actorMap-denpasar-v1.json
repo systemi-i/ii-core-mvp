@@ -1,0 +1,240 @@
+{
+  "id": "actorMap-denpasar-v1",
+  "object_type": "ActorMap",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:16:10.020176",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "ActorMap",
+    "actor_map_id": "actorMap-denpasar-v1",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "actors": [
+      {
+        "actor_id": "act-denpasar-tata-ruang",
+        "name": "Denpasar Dinas Tata Ruang",
+        "actor_type": "municipal",
+        "authority_scope": "local",
+        "override_capabilities": [
+          "manual_trigger"
+        ],
+        "trust_profile": "medium",
+        "governance_culture": "pragmatic_bureaucratic",
+        "functions": [
+          "zoning"
+        ],
+        "modules_responsible": [
+          "mod-001"
+        ],
+        "notes": "Responsible for issuing spatial plan clearance. Can approve discretionary cases informally. Responsive but slow. Pragmatic over formal."
+      },
+      {
+        "actor_id": "act-denpasar-dpmptsp",
+        "name": "Denpasar DPMPTSP",
+        "actor_type": "municipal",
+        "authority_scope": "local",
+        "override_capabilities": [
+          "queue_reorder"
+        ],
+        "trust_profile": "medium",
+        "governance_culture": "facilitative_broker",
+        "functions": [
+          "coordination"
+        ],
+        "modules_responsible": [],
+        "notes": "One-stop shop routing to other departments. Can reprioritize queues. Capacity-constrained."
+      },
+      {
+        "actor_id": "act-denpasar-pupr",
+        "name": "Denpasar PUPR",
+        "actor_type": "municipal",
+        "authority_scope": "local",
+        "override_capabilities": [
+          "design_amendment",
+          "permit_hold"
+        ],
+        "trust_profile": "medium-low",
+        "governance_culture": "procedural_engineering",
+        "functions": [
+          "construction_permitting"
+        ],
+        "modules_responsible": [
+          "mod-002"
+        ],
+        "notes": "Issues IMB/PBG permits. Risk-averse and document-heavy. Delays common in ambiguous projects."
+      },
+      {
+        "actor_id": "act-dlh-bali",
+        "name": "DLH Bali",
+        "actor_type": "regulator",
+        "authority_scope": "provincial",
+        "override_capabilities": [
+          "review_loop",
+          "public_hearing_trigger"
+        ],
+        "trust_profile": "medium",
+        "governance_culture": "legal_administrative",
+        "functions": [
+          "environmental_review"
+        ],
+        "modules_responsible": [
+          "mod-003"
+        ],
+        "notes": "Coordinates AMDAL review. Procedurally rigid; triggers hearings based on classification."
+      },
+      {
+        "actor_id": "act-amdal-commission-bali",
+        "name": "AMDAL Commission (Bali)",
+        "actor_type": "committee",
+        "authority_scope": "provincial",
+        "override_capabilities": [
+          "loop_trigger",
+          "conditional_approval",
+          "hearing_required"
+        ],
+        "trust_profile": "low-medium",
+        "governance_culture": "consensus_administrative",
+        "functions": [
+          "environmental_approval"
+        ],
+        "modules_responsible": [
+          "mod-003"
+        ],
+        "notes": "Multi-agency review body for AMDAL. Delays stem from consensus bottlenecks."
+      },
+      {
+        "actor_id": "act-memr",
+        "name": "Ministry of Energy and Mineral Resources (MEMR)",
+        "actor_type": "national_agency",
+        "authority_scope": "national",
+        "override_capabilities": [
+          "regulatory_exemption",
+          "conditional_license"
+        ],
+        "trust_profile": "medium-high",
+        "governance_culture": "policy_technocratic",
+        "functions": [
+          "licensing"
+        ],
+        "modules_responsible": [
+          "mod-004"
+        ],
+        "notes": "Issues IUJPTL licenses. Can classify projects and grant conditional approvals."
+      },
+      {
+        "actor_id": "act-pln-uid-bali",
+        "name": "PLN UID Bali",
+        "actor_type": "platform",
+        "authority_scope": "regional",
+        "override_capabilities": [
+          "technical_rejection",
+          "queue_freeze",
+          "require_design_change"
+        ],
+        "trust_profile": "medium-low",
+        "governance_culture": "operational_engineering",
+        "functions": [
+          "grid_review"
+        ],
+        "modules_responsible": [
+          "mod-005"
+        ],
+        "notes": "Conducts early-stage grid feasibility studies. Known for opaque rejections."
+      },
+      {
+        "actor_id": "act-pln-uip-bali",
+        "name": "PLN UIP (Bali Sub-Transmission Unit)",
+        "actor_type": "platform",
+        "authority_scope": "regional",
+        "override_capabilities": [
+          "grid_integration_condition",
+          "capacity_upgrade_deferral"
+        ],
+        "trust_profile": "medium",
+        "governance_culture": "strategic_grid_planning",
+        "functions": [
+          "interconnection_approval"
+        ],
+        "modules_responsible": [
+          "mod-005"
+        ],
+        "notes": "Assesses long-term grid impact for 70\u2013150kV projects. Strategy-aligned."
+      },
+      {
+        "actor_id": "act-oss-bkpm",
+        "name": "OSS System (Online Single Submission \u2013 BKPM)",
+        "actor_type": "platform",
+        "authority_scope": "cross-jurisdictional",
+        "override_capabilities": [
+          "case_escalation",
+          "cross-agency_flagging"
+        ],
+        "trust_profile": "medium",
+        "governance_culture": "technocratic_coordinator",
+        "functions": [
+          "routing"
+        ],
+        "modules_responsible": [],
+        "notes": "National platform for permit intake and routing. Escalates delays."
+      },
+      {
+        "actor_id": "act-sni-labs",
+        "name": "SNI Certification Labs (BSN / KAN-accredited)",
+        "actor_type": "regulator",
+        "authority_scope": "national",
+        "override_capabilities": [
+          "testing_delay",
+          "non-conformance_flag"
+        ],
+        "trust_profile": "low-medium",
+        "governance_culture": "compliance_verification",
+        "functions": [
+          "equipment_testing"
+        ],
+        "modules_responsible": [
+          "mod-006"
+        ],
+        "notes": "Tests equipment for SNI compliance. Major bottleneck for imported tech."
+      },
+      {
+        "actor_id": "act-licensed-electrical-inspector",
+        "name": "Licensed Electrical Inspector",
+        "actor_type": "private_entity",
+        "authority_scope": "nationally licensed, locally assigned",
+        "override_capabilities": [
+          "inspection_fail",
+          "corrective_action_request"
+        ],
+        "trust_profile": "medium-high",
+        "governance_culture": "technical_verification",
+        "functions": [
+          "final_inspection"
+        ],
+        "modules_responsible": [
+          "mod-007"
+        ],
+        "notes": "Issues Operation Worthiness Certificate (SLO). Pass/fail logic only."
+      },
+      {
+        "actor_id": "act-village-council-banjar",
+        "name": "Village Council / Banjar",
+        "actor_type": "local_informal",
+        "authority_scope": "community / customary",
+        "override_capabilities": [
+          "informal_veto",
+          "social_license_delay"
+        ],
+        "trust_profile": "contextual",
+        "governance_culture": "relational_customary",
+        "functions": [
+          "social_license"
+        ],
+        "modules_responsible": [],
+        "notes": "Symbolic but powerful actor. Can delay access or obstruct projects without formal process."
+      }
+    ]
+  }
+}

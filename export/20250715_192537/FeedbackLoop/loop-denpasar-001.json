@@ -1,0 +1,25 @@
+{
+  "id": "loop-denpasar-001",
+  "object_type": "FeedbackLoop",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 19:25:37.394821",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-001",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "AMDAL Review Iteration",
+    "trigger_module_id": "mod-denpasar-environmental-assessment",
+    "loop_type": "technical_revision",
+    "loop_signature": [
+      "amdal_resubmission",
+      "impact_classification_dispute"
+    ],
+    "description": "The AMDAL Commission may return the environmental documentation for multiple rounds of revision. There is no fixed cap on how many iterations may occur.",
+    "stability_rating": 0.5
+  }
+}

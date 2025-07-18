@@ -1,0 +1,68 @@
+[
+  {
+    "id": "override-denpasar-001",
+    "object_type": "OverrideProtocol",
+    "override_id": "override-denpasar-001",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-environmental-assessment",
+    "override_title": "Deemed AMDAL Approval",
+    "override_type": "timebound_default",
+    "actor_triggering": "DLH Bali",
+    "trigger_condition": {
+      "type": "deadline_lapse",
+      "value": "120_days"
+    },
+    "legitimacy_source": "national permitting reform scenario (2025 draft)",
+    "description": "If AMDAL Commission fails to issue a decision within 120 days, the review is considered approved by default. Meant to prevent administrative paralysis."
+  },
+  {
+    "id": "override-denpasar-002",
+    "object_type": "OverrideProtocol",
+    "override_id": "override-denpasar-002",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-grid-coordination",
+    "override_title": "Template-Based Grid Study Bypass",
+    "override_type": "technical_substitution",
+    "actor_triggering": "PLN UID Bali",
+    "trigger_condition": {
+      "type": "design_match",
+      "value": "PLN-approved BESS interconnect template"
+    },
+    "legitimacy_source": "internal PLN engineering memo (pilot framework)",
+    "description": "If the submitted project matches a pre-approved BESS system configuration, PLN may waive the full study and issue immediate feasibility clearance."
+  },
+  {
+    "id": "override-denpasar-003",
+    "object_type": "OverrideProtocol",
+    "override_id": "override-denpasar-003",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-construction-authorization",
+    "override_title": "Mayor-Level Permit Acceleration",
+    "override_type": "political_override",
+    "actor_triggering": "Mayor of Denpasar",
+    "trigger_condition": {
+      "type": "strategic_project_designation"
+    },
+    "legitimacy_source": "local executive authority and investment promotion policy",
+    "description": "The mayor may direct DPMPTSP or PUPR to expedite or approve permits for projects deemed economically strategic (e.g. clean energy, tourism-aligned infrastructure)."
+  },
+  {
+    "id": "override-denpasar-004",
+    "object_type": "OverrideProtocol",
+    "override_id": "override-denpasar-004",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-symbolic-clearance",
+    "override_title": "Community Mediation Reset",
+    "override_type": "social_reintegration",
+    "actor_triggering": "Neutral Local Facilitator",
+    "trigger_condition": {
+      "type": "deadlock_or_conflict"
+    },
+    "legitimacy_source": "customary mediation tradition (adat + state hybrid)",
+    "description": "When informal village consent is withheld, a third-party mediator may be deployed to renegotiate terms, offer benefit-sharing, or reinitiate consultation to unblock the project."
+  }
+]

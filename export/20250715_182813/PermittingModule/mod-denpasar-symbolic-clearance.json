@@ -1,0 +1,50 @@
+{
+  "id": "mod-denpasar-symbolic-clearance",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:28:13.751974",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-symbolic-clearance",
+    "module_name": "Symbolic Clearance",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 0,
+    "actor_responsible": "Village Council / Banjar",
+    "actor_type": "informal_local_entity",
+    "procedure_type": "customary_consensus",
+    "optional": true,
+    "linked_functional_modules": [
+      "Site Control & Zoning",
+      "Public Consultation / Appeals"
+    ],
+    "temporal_rhythm": "pre-sequence_check",
+    "description": "Covers informal consent processes with local village authorities or customary landholders. Required in practice for site access and project acceptance, though not formally documented.",
+    "functional_role": "social license and pre-legal clearance",
+    "duration_days": 30,
+    "symbolic_risks": [
+      "informal_veto",
+      "local_power_mediation"
+    ],
+    "grammar_lines": [
+      "Developer:Engage[Village_Council]{If Project_Located_In_Customary_Area}(Optional)",
+      "Village_Council:Signal[Consent]{If No_Objection_Raised}(Nonbinding)",
+      "Village_Council:Block[Site_Access]{If Not_Consulted}(Informal)"
+    ],
+    "dependencies": [],
+    "notes": {
+      "informal_notes": "Banjar-level gatekeeping is especially relevant in rural districts of Denpasar. Even municipal-zoned areas may require relational alignment. Customary logic often supersedes legal entitlement.",
+      "symbolic_scaffold": "Community blessing ceremonies or leader visits often signal acceptance \u2014 these moments carry more weight than formal signatures.",
+      "feedback_structure": "No structured appeals. Trust-building, benefit sharing, or mediation required if rejected.",
+      "failure_modes": [
+        "Silent veto from village head delays application filing",
+        "Disputes between formal land title and customary claims",
+        "Local actors request unregulated compensation or recognition"
+      ]
+    }
+  }
+}

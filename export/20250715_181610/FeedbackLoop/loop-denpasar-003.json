@@ -1,0 +1,25 @@
+{
+  "id": "loop-denpasar-003",
+  "object_type": "FeedbackLoop",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:16:10.020176",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-003",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "PLN Technical Study Loop",
+    "trigger_module_id": "mod-denpasar-grid-coordination",
+    "loop_type": "design_resubmission",
+    "loop_signature": [
+      "loadflow_mismatch",
+      "technical_infeasibility"
+    ],
+    "description": "PLN may request design modifications or reject interconnection requests based on substation capacity or protection parameters. Developers must iterate until feasibility is confirmed.",
+    "stability_rating": 0.4
+  }
+}

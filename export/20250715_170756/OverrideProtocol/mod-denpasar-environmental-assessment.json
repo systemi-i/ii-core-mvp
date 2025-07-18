@@ -1,0 +1,26 @@
+{
+  "id": "mod-denpasar-environmental-assessment",
+  "object_type": "OverrideProtocol",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 17:07:56.864066",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "OverrideProtocol",
+    "override_id": "override-denpasar-001",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "module_id": "mod-denpasar-environmental-assessment",
+    "override_title": "Deemed AMDAL Approval",
+    "override_type": "timebound_default",
+    "actor_triggering": "DLH Bali",
+    "trigger_condition": {
+      "type": "deadline_lapse",
+      "value": "120_days"
+    },
+    "legitimacy_source": "national permitting reform scenario (2025 draft)",
+    "description": "If AMDAL Commission fails to issue a decision within 120 days, the review is considered approved by default. Meant to prevent administrative paralysis."
+  }
+}

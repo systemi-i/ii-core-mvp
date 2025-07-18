@@ -1,0 +1,23 @@
+{
+  "id": "reform-denpasar-002",
+  "object_type": "ReformVariant",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:55:26.670251",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "ReformVariant",
+    "reform_id": "reform-denpasar-002",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "title": "Deemed AMDAL Approval (120-Day Default)",
+    "reform_type": "statutory_timer",
+    "original_module_id": "mod-denpasar-environmental-assessment",
+    "proposed_changes": {
+      "default_approval_timer": "120_days",
+      "estimated_days_saved": 45
+    }
+  }
+}

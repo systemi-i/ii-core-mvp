@@ -1,0 +1,52 @@
+{
+  "id": "mod-denpasar-grid-coordination",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 19:22:42.424422",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-grid-coordination",
+    "module_name": "Grid Coordination & Interconnection",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 4,
+    "actor_responsible": "PLN UID Bali",
+    "actor_type": "state_owned_enterprise",
+    "procedure_type": "technical_evaluation",
+    "linked_functional_modules": [
+      "Technical Design & Compliance",
+      "Electrical Interconnection Agreement"
+    ],
+    "temporal_rhythm": "discretionary_delayed",
+    "description": "Covers PLN\u2019s grid feasibility study, connection agreement process, and early-stage system protection review. Must precede construction and power injection.",
+    "functional_role": "network compatibility and dispatch feasibility",
+    "duration_days": 90,
+    "symbolic_risks": [
+      "queue_opacity",
+      "veto_without_justification"
+    ],
+    "grammar_lines": [
+      "Developer:Submit[Grid_Application]{If Site_Identified}(Mandatory)",
+      "PLN_UID:Run[Feasibility_Study]{If Application_Accepted}(Sequential)",
+      "PLN_UID:Return[Study_Result]{If Completed}(Loop_Eligible)",
+      "PLN_UID:Approve[Grid_Access]{If No_Upgrade_Required}(Conditional)"
+    ],
+    "dependencies": [
+      "mod-denpasar-technical-compliance"
+    ],
+    "notes": {
+      "informal_notes": "Delays are common due to undisclosed internal queues. Developer follow-up and PLN relationship management often necessary.",
+      "symbolic_scaffold": "Grid approval serves as technical validation that a project is feasible \u2014 often a turning point for moving into final design and construction finance.",
+      "feedback_structure": "PLN sometimes gives informal feedback or asks for design changes before issuing a formal rejection. No structured public appeal process.",
+      "failure_modes": [
+        "Rejection due to substation congestion",
+        "Repeated redesign requests from PLN without clarity",
+        "Uncertainty over storage project categorization for injection rights"
+      ]
+    }
+  }
+}

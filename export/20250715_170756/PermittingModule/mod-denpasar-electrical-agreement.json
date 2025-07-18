@@ -1,0 +1,51 @@
+{
+  "id": "mod-denpasar-electrical-agreement",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 17:07:56.864066",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-electrical-agreement",
+    "module_name": "Electrical Interconnection Agreement",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 6.1,
+    "actor_responsible": "PLN UID Bali",
+    "actor_type": "state_owned_enterprise",
+    "procedure_type": "commercial_agreement",
+    "linked_functional_modules": [
+      "Grid Coordination & Interconnection",
+      "Final Inspections & Operational Licensing"
+    ],
+    "temporal_rhythm": "discretionary_negotiation",
+    "description": "Covers negotiation of power purchase agreements (PPA) or grid services contracts for BESS projects. Includes tariff classification, dispatch rights, and metering structure.",
+    "functional_role": "commercial alignment and energy market authorization",
+    "duration_days": 75,
+    "symbolic_risks": [
+      "contractual_ambiguity",
+      "dispatch_discrimination"
+    ],
+    "grammar_lines": [
+      "Developer:Propose[Contract_Terms]{If Grid_Feasibility_Positive}(Conditional)",
+      "PLN_UID:Negotiate[Service_Agreement]{If Technically_Accepted}(Discretionary)",
+      "PLN_UID:Execute[PPA_or_Storage_Contract]{If Terms_Resolved}(Final)"
+    ],
+    "dependencies": [
+      "mod-denpasar-grid-coordination"
+    ],
+    "notes": {
+      "informal_notes": "PLN has no standardized templates for standalone BESS, leading to project-specific negotiation on dispatch logic and revenue model. Arbitration and escalation options are unclear.",
+      "symbolic_scaffold": "Contract signature acts as de facto inclusion in the national power system \u2014 often a milestone celebrated by project backers.",
+      "feedback_structure": "Iterative negotiation with informal PLN feedback loops. No external arbitration; failure to agree leads to project freeze.",
+      "failure_modes": [
+        "Prolonged negotiation due to undefined BESS service categories",
+        "PLN refusal to buy or commit to storage dispatch window",
+        "Contract delay triggers financing risk or capital pullback"
+      ]
+    }
+  }
+}

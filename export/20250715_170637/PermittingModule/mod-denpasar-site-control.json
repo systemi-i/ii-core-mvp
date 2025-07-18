@@ -1,0 +1,48 @@
+{
+  "id": "mod-denpasar-site-control",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 17:06:37.205982",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-site-control",
+    "module_name": "Site Control & Zoning",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 1,
+    "actor_responsible": "Denpasar Dinas Tata Ruang",
+    "actor_type": "municipal_agency",
+    "procedure_type": "regulatory",
+    "linked_functional_modules": [
+      "Environmental Assessment",
+      "Construction Authorization"
+    ],
+    "temporal_rhythm": "fixed",
+    "description": "Handles land use compatibility and spatial plan clearance. Required for BESS projects to establish development eligibility.",
+    "functional_role": "site eligibility verification",
+    "duration_days": 45,
+    "symbolic_risks": [
+      "informal_veto",
+      "customary_jurisdiction_overlap"
+    ],
+    "grammar_lines": [
+      "Developer:Submit[Site_Coordinates]{If Project_Planned}(Mandatory)",
+      "Denpasar_Dinas:Evaluate[Spatial_Plan_Clearance]{If Compatible}(Sequential)",
+      "Village_Council:Signal[Consent]{If Informal_Engagement_Occurs}(Optional)"
+    ],
+    "dependencies": [],
+    "notes": {
+      "informal_notes": "Village council engagement often precedes formal submission to mitigate local pushback. Discretion exists in borderline zoning cases.",
+      "symbolic_scaffold": "Spatial compatibility often reinforced by public maps, mayoral messaging, or Smart City narrative.",
+      "feedback_structure": "No public consultation required, but developers may be asked to re-site based on internal review.",
+      "failure_modes": [
+        "Site rejected due to outdated zoning layers",
+        "Informal veto from local banjar delaying formal intake"
+      ]
+    }
+  }
+}

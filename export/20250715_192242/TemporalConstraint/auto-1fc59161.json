@@ -1,0 +1,19 @@
+{
+  "id": "auto-1fc59161",
+  "object_type": "TemporalConstraint",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 19:22:42.445344",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "TemporalConstraint",
+    "module_ids": [
+      "mod-denpasar-site-control",
+      "mod-denpasar-environmental-assessment"
+    ],
+    "type": "must_finish_before",
+    "rationale": "Zoning clearance is required before environmental documentation can be formally reviewed or accepted."
+  }
+}

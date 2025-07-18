@@ -1,0 +1,25 @@
+{
+  "id": "loop-denpasar-005",
+  "object_type": "FeedbackLoop",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:38:13.730430",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-005",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "Post-Permit Compliance Cycle",
+    "trigger_module_id": "mod-denpasar-post-permit-monitoring",
+    "loop_type": "compliance_reporting",
+    "loop_signature": [
+      "audit_trigger",
+      "violation_notice"
+    ],
+    "description": "MEMR may initiate spot audits post-commissioning. Violations trigger corrective action and potential re-audit. Reporting frequency is irregular.",
+    "stability_rating": 0.7
+  }
+}

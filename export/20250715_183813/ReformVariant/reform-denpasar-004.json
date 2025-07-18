@@ -1,0 +1,23 @@
+{
+  "id": "reform-denpasar-004",
+  "object_type": "ReformVariant",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:38:13.748946",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "ReformVariant",
+    "reform_id": "reform-denpasar-004",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "title": "Digital Consolidation of Construction Permits",
+    "reform_type": "interface_integration",
+    "original_module_id": "mod-denpasar-construction-authorization",
+    "proposed_changes": {
+      "digital_integration": "multi-permit routing via OSS",
+      "estimated_days_saved": 20
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "mod-denpasar-technical-compliance",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 19:15:51.292699",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-technical-compliance",
+    "module_name": "Technical Design & Compliance",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 3,
+    "actor_responsible": "MEMR",
+    "actor_type": "national_agency",
+    "procedure_type": "licensing + certification",
+    "linked_functional_modules": [
+      "Grid Coordination & Interconnection",
+      "Final Inspections & Operational Licensing"
+    ],
+    "temporal_rhythm": "split_sequence",
+    "description": "Covers electricity licensing (IUJPTL) and technical equipment certification under national standards (SNI). Required before construction and commissioning.",
+    "functional_role": "legal project classification and safety assurance",
+    "duration_days": 60,
+    "symbolic_risks": [
+      "import-mismatch-delay",
+      "classification_ambiguity"
+    ],
+    "grammar_lines": [
+      "Developer:Apply[IUJPTL_License]{If BESS > 500kW}(Parallel)",
+      "MEMR:Issue[IUJPTL]{If Documents_Complete}(Conditional)",
+      "Developer:Submit[Battery_Equipment_SNI]{If Imported}(Parallel)",
+      "SNI_Lab:Certify[Conformity]{If Test_Passed}(Loop)"
+    ],
+    "dependencies": [
+      "mod-denpasar-environmental-assessment"
+    ],
+    "notes": {
+      "informal_notes": "IUJPTL is often issued provisionally while waiting on grid or AMDAL clearance. SNI testing is a hidden bottleneck with long queue times.",
+      "symbolic_scaffold": "IUJPTL serves as the formal recognition of a project\u2019s role in the energy sector \u2014 often a key milestone for funders and PLN engagement.",
+      "feedback_structure": "No structured feedback from SNI labs \u2014 rejection leads to retest without formal clarification. MEMR has clearer channels.",
+      "failure_modes": [
+        "Delayed issuance of IUJPTL due to minor documentation issues",
+        "SNI test backlog delaying procurement",
+        "Disagreement on whether BESS qualifies as generation or support service"
+      ]
+    }
+  }
+}

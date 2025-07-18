@@ -1,0 +1,19 @@
+{
+  "id": "SLO",
+  "object_type": "SemanticMapping",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:40:12.256585",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "SemanticMapping",
+    "term": "SLO",
+    "standard_equivalent": "Operation Worthiness Certificate",
+    "used_in_modules": [
+      "mod-denpasar-final-inspections"
+    ],
+    "notes": "The SLO (Sertifikat Laik Operasi) is issued by a licensed inspector and required before grid synchronization. It confirms safety and code compliance."
+  }
+}

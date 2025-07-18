@@ -1,0 +1,54 @@
+{
+  "id": "mod-denpasar-environmental-assessment",
+  "object_type": "PermittingModule",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:16:10.022712",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "PermittingModule",
+    "module_id": "mod-denpasar-environmental-assessment",
+    "module_name": "Environmental Assessment",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "sequence_order": 2,
+    "actor_responsible": "DLH Bali",
+    "actor_type": "provincial_agency",
+    "procedure_type": "multi_stage_review",
+    "linked_functional_modules": [
+      "Public Consultation / Appeals",
+      "Construction Authorization",
+      "Post-Permit Monitoring"
+    ],
+    "temporal_rhythm": "loop_prone",
+    "description": "Coordinates the formal environmental impact review (AMDAL) for BESS projects >10\u202fMWh, including commission review, conditional approvals, and public hearings.",
+    "functional_role": "environmental risk classification and mitigation enforcement",
+    "duration_days": 180,
+    "symbolic_risks": [
+      "loopback_iteration",
+      "public_hearing_politicization"
+    ],
+    "grammar_lines": [
+      "Developer:Submit[AMDAL_Documentation]{If BESS >10MWh}(Mandatory)",
+      "DLH_Bali:Trigger[AMDAL_Commission_Review]{If Complete}(Sequential)",
+      "AMDAL_Commission:Return[Revision_Request]{If Insufficient}(Loop)",
+      "AMDAL_Commission:Convene[Public_Hearing]{If Triggered}(Conditional)",
+      "DLH_Bali:Approve[Environmental_Clearance]{If Satisfactory}(Final)"
+    ],
+    "dependencies": [
+      "mod-denpasar-site-control"
+    ],
+    "notes": {
+      "informal_notes": "Commission behavior is variable and sensitive to political signals or NGO presence. Some developers pre-negotiate draft AMDALs to avoid hearing triggers.",
+      "symbolic_scaffold": "AMDAL documents often used to signal environmental alignment to funders and communities, not just regulatory bodies.",
+      "feedback_structure": "Structured revision process + optional community feedback loop; no hard limit on resubmissions.",
+      "failure_modes": [
+        "AMDAL revision loop with unclear expectations",
+        "Triggering public hearing due to stakeholder pressure",
+        "Approval stalled due to inter-agency disagreement on impact classification"
+      ]
+    }
+  }
+}

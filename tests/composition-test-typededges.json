@@ -1,0 +1,38 @@
+{
+  "id": "composition-test-typededges",
+  "object_type": "Composition",
+  "jurisdiction": "TestJurisdiction",
+  "version": "v1",
+  "created_by": "dev:test",
+  "data": {
+    "title": "Test Composition with Typed Edges",
+    "jurisdiction": "TestJurisdiction",
+    "modules": [
+      "mod-A",
+      "mod-B",
+      "mod-C"
+    ],
+    "edges": [
+      {
+        "from_node": "mod-A",
+        "to_node": "mod-B",
+        "type": "dependency"
+      },
+      {
+        "from_node": "mod-B",
+        "to_node": "mod-C",
+        "type": "conditional",
+        "condition": "approval == true"
+      },
+      {
+        "from_node": "mod-A",
+        "to_node": "mod-C",
+        "type": "override",
+        "condition": "elapsed_days > 15",
+        "override_action": "skip_step",
+        "override_id": "override-test-001"
+      }
+    ],
+    "created_by": "dev:test"
+  }
+}

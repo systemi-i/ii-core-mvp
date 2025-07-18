@@ -1,0 +1,33 @@
+{
+  "id": "JP-DENPASAR-BESS-v1",
+  "object_type": "JurisdictionProfile",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 17:07:56.864066",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "JurisdictionProfile",
+    "jurisdiction_id": "JP-DENPASAR-BESS-v1",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "region": "Bali Province, Indonesia",
+    "system_type": "unitary_civil_law",
+    "system_type_notes": "Indonesia is a unitary state governed by a civil law system, but permitting processes are distributed across multiple government levels.",
+    "permitting_model": "hybrid",
+    "permitting_model_notes": "Permitting is shared across national (MEMR), provincial (DLH Bali), and municipal (Denpasar) authorities, with no single controlling node.",
+    "digital_maturity": "medium",
+    "digital_maturity_notes": "The OSS platform centralizes applications, but many core reviews (e.g. AMDAL) are still offline and discretionary.",
+    "coordination_style": "multi-tier_sequential",
+    "coordination_style_notes": "Steps are legally distinct and must often be completed in sequence; inter-agency coordination is manual and informal.",
+    "override_culture": "discretionary_fragments",
+    "override_culture_notes": "Override mechanisms exist (e.g. political intervention, deemed approval reform), but are not systematized or transparent.",
+    "symbolic_density_profile": "medium-high",
+    "symbolic_density_profile_notes": "Permitting is shaped by formal rituals (public hearings), platform signals (OSS presence), and informal local consent (village councils).",
+    "feedback_structure": "formal + informal + nested consultative",
+    "feedback_structure_notes": "Includes structured feedback via AMDAL and informal local influence, with no unified tracking system.",
+    "coherence_baseline_score": 0.64,
+    "coherence_baseline_score_notes": "Moderately coherent due to known process logic, but high vulnerability to delays from informal vetoes and multi-level discretion."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "auto-7a6b5a9f",
+  "object_type": "TemporalConstraint",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 19:17:34.175059",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "TemporalConstraint",
+    "module_ids": [
+      "mod-denpasar-technical-compliance",
+      "mod-denpasar-final-inspections"
+    ],
+    "type": "must_finish_before",
+    "rationale": "All imported equipment must receive SNI certification prior to the final SLO inspection and commissioning."
+  }
+}

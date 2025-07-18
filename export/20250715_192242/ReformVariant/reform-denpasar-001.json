@@ -1,0 +1,23 @@
+{
+  "id": "reform-denpasar-001",
+  "object_type": "ReformVariant",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 19:22:42.441960",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "ReformVariant",
+    "reform_id": "reform-denpasar-001",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "title": "Parallel Grid + Environmental Reviews",
+    "reform_type": "coordination_protocol",
+    "original_module_id": "mod-denpasar-grid-coordination",
+    "proposed_changes": {
+      "process_change": "Enable concurrent PLN study and AMDAL review via shared data intake forms and OSS coordination",
+      "estimated_days_saved": 60
+    }
+  }
+}

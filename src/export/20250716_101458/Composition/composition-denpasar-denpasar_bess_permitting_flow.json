@@ -1,0 +1,83 @@
+{
+  "id": "composition-denpasar-denpasar_bess_permitting_flow",
+  "object_type": "Composition",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-16 10:14:58.008255",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "id": "composition-denpasar-denpasar_bess_permitting_flow",
+    "object_type": "Composition",
+    "jurisdiction": "Denpasar",
+    "version": "v1",
+    "created_on": "2025-07-15 19:25:37.414384",
+    "created_by": "Federico",
+    "previous_version": null,
+    "tags": [],
+    "data": {
+      "title": "Denpasar BESS Permitting Flow",
+      "jurisdiction": "Denpasar",
+      "modules": [
+        "mod-denpasar-environmental-assessment",
+        "mod-denpasar-grid-coordination",
+        "mod-denpasar-electrical-agreement",
+        "mod-denpasar-technical-compliance",
+        "mod-denpasar-public-consultation",
+        "mod-denpasar-symbolic-clearance",
+        "mod-denpasar-construction-authorization",
+        "mod-denpasar-final-inspections",
+        "mod-denpasar-post-permit-monitoring",
+        "mod-denpasar-site-control"
+      ],
+      "edges": [
+        [
+          "mod-denpasar-environmental-assessment",
+          "mod-denpasar-technical-compliance"
+        ],
+        [
+          "mod-denpasar-environmental-assessment",
+          "mod-denpasar-public-consultation"
+        ],
+        [
+          "mod-denpasar-environmental-assessment",
+          "mod-denpasar-construction-authorization"
+        ],
+        [
+          "mod-denpasar-grid-coordination",
+          "mod-denpasar-electrical-agreement"
+        ],
+        [
+          "mod-denpasar-grid-coordination",
+          "mod-denpasar-final-inspections"
+        ],
+        [
+          "mod-denpasar-technical-compliance",
+          "mod-denpasar-grid-coordination"
+        ],
+        [
+          "mod-denpasar-technical-compliance",
+          "mod-denpasar-final-inspections"
+        ],
+        [
+          "mod-denpasar-construction-authorization",
+          "mod-denpasar-final-inspections"
+        ],
+        [
+          "mod-denpasar-final-inspections",
+          "mod-denpasar-post-permit-monitoring"
+        ],
+        [
+          "mod-denpasar-site-control",
+          "mod-denpasar-environmental-assessment"
+        ],
+        [
+          "mod-denpasar-site-control",
+          "mod-denpasar-construction-authorization"
+        ]
+      ],
+      "created_by": "Federico"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "loop-denpasar-004",
+  "object_type": "FeedbackLoop",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 17:07:56.864066",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-004",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "SNI Certification Resubmission",
+    "trigger_module_id": "mod-denpasar-technical-compliance",
+    "loop_type": "conformity_retesting",
+    "loop_signature": [
+      "lab_failure",
+      "noncompliant_equipment"
+    ],
+    "description": "If imported equipment fails SNI tests, developers must revise technical documentation or substitute components and reinitiate testing.",
+    "stability_rating": 0.5
+  }
+}

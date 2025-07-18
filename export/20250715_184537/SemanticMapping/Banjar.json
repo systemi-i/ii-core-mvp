@@ -1,0 +1,19 @@
+{
+  "id": "Banjar",
+  "object_type": "SemanticMapping",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:45:37.812720",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "SemanticMapping",
+    "term": "Banjar",
+    "standard_equivalent": "Village Council / Informal Authority",
+    "used_in_modules": [
+      "mod-denpasar-symbolic-clearance"
+    ],
+    "notes": "The Banjar is a local customary institution with social legitimacy. Though informal, it can block or enable site development through relational influence."
+  }
+}

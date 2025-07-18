@@ -1,0 +1,72 @@
+{
+  "id": "composition-denpasar-test_final_",
+  "object_type": "Composition",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-17 17:57:18.812313",
+  "created_by": "user:compose",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "title": "test final ",
+    "jurisdiction": "Denpasar",
+    "modules": [
+      "mod-denpasar-environmental-assessment",
+      "mod-denpasar-grid-coordination",
+      "mod-denpasar-electrical-agreement",
+      "mod-denpasar-technical-compliance",
+      "mod-denpasar-public-consultation",
+      "mod-denpasar-symbolic-clearance"
+    ],
+    "edges": [
+      {
+        "from_node": "mod-denpasar-environmental-assessment",
+        "to_node": "mod-denpasar-grid-coordination",
+        "type": "dependency",
+        "label": ""
+      },
+      {
+        "from_node": "mod-denpasar-grid-coordination",
+        "to_node": "mod-denpasar-electrical-agreement",
+        "type": "temporal",
+        "label": ""
+      },
+      {
+        "from_node": "mod-denpasar-electrical-agreement",
+        "to_node": "mod-denpasar-technical-compliance",
+        "type": "dependency",
+        "label": ""
+      },
+      {
+        "from_node": "mod-denpasar-technical-compliance",
+        "to_node": "mod-denpasar-public-consultation",
+        "type": "semantic_link",
+        "label": ""
+      },
+      {
+        "from_node": "mod-denpasar-public-consultation",
+        "to_node": "mod-denpasar-symbolic-clearance",
+        "type": "dependency",
+        "label": ""
+      }
+    ],
+    "symbolic_scaffolds": [
+      "ss-denpasar-004",
+      "ss-denpasar-001",
+      "ss-denpasar-002"
+    ],
+    "override_protocols": [
+      "override-denpasar-001",
+      "override-denpasar-002",
+      "override-denpasar-004"
+    ],
+    "feedback_loops": [
+      "loop-denpasar-001",
+      "loop-denpasar-003",
+      "loop-denpasar-004",
+      "loop-denpasar-002"
+    ],
+    "failure_events": [],
+    "created_by": "user:compose"
+  }
+}

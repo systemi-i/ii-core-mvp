@@ -1,0 +1,62 @@
+[
+  {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-001",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "AMDAL Review Iteration",
+    "trigger_module_id": "mod-denpasar-environmental-assessment",
+    "loop_type": "technical_revision",
+    "loop_signature": ["amdal_resubmission", "impact_classification_dispute"],
+    "description": "The AMDAL Commission may return the environmental documentation for multiple rounds of revision. There is no fixed cap on how many iterations may occur.",
+    "stability_rating": 0.5
+  },
+  {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-002",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "Public Hearing Feedback Loop",
+    "trigger_module_id": "mod-denpasar-public-consultation",
+    "loop_type": "deliberative_response",
+    "loop_signature": ["hearing_objection", "community_rebuttal"],
+    "description": "Public consultations may surface objections that trigger revisions or redesign. Hearing outcomes are discretionary but carry symbolic and political weight.",
+    "stability_rating": 0.6
+  },
+  {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-003",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "PLN Technical Study Loop",
+    "trigger_module_id": "mod-denpasar-grid-coordination",
+    "loop_type": "design_resubmission",
+    "loop_signature": ["loadflow_mismatch", "technical_infeasibility"],
+    "description": "PLN may request design modifications or reject interconnection requests based on substation capacity or protection parameters. Developers must iterate until feasibility is confirmed.",
+    "stability_rating": 0.4
+  },
+  {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-004",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "SNI Certification Resubmission",
+    "trigger_module_id": "mod-denpasar-technical-compliance",
+    "loop_type": "conformity_retesting",
+    "loop_signature": ["lab_failure", "noncompliant_equipment"],
+    "description": "If imported equipment fails SNI tests, developers must revise technical documentation or substitute components and reinitiate testing.",
+    "stability_rating": 0.5
+  },
+  {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-005",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "Post-Permit Compliance Cycle",
+    "trigger_module_id": "mod-denpasar-post-permit-monitoring",
+    "loop_type": "compliance_reporting",
+    "loop_signature": ["audit_trigger", "violation_notice"],
+    "description": "MEMR may initiate spot audits post-commissioning. Violations trigger corrective action and potential re-audit. Reporting frequency is irregular.",
+    "stability_rating": 0.7
+  }
+]

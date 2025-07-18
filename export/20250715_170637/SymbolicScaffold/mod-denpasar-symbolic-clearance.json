@@ -1,0 +1,17 @@
+{
+  "id": "mod-denpasar-symbolic-clearance",
+  "object_type": "SymbolicScaffold",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 17:06:37.210210",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "SymbolicScaffold",
+    "scaffold_id": "ss-denpasar-002",
+    "module_id": "mod-denpasar-symbolic-clearance",
+    "type": "customary blessing",
+    "description": "Village-level blessing ceremonies or informal consent meetings serve as ritualized approvals. These events are not legal prerequisites but often dictate whether the project can physically proceed."
+  }
+}

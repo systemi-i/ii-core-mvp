@@ -1,0 +1,25 @@
+{
+  "id": "loop-denpasar-002",
+  "object_type": "FeedbackLoop",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 18:40:12.243867",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "FeedbackLoop",
+    "loop_id": "loop-denpasar-002",
+    "jurisdiction": "Denpasar",
+    "jurisdiction_version": "v1",
+    "loop_title": "Public Hearing Feedback Loop",
+    "trigger_module_id": "mod-denpasar-public-consultation",
+    "loop_type": "deliberative_response",
+    "loop_signature": [
+      "hearing_objection",
+      "community_rebuttal"
+    ],
+    "description": "Public consultations may surface objections that trigger revisions or redesign. Hearing outcomes are discretionary but carry symbolic and political weight.",
+    "stability_rating": 0.6
+  }
+}

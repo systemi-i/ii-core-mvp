@@ -1,0 +1,19 @@
+{
+  "id": "IMB / PBG",
+  "object_type": "SemanticMapping",
+  "jurisdiction": "Denpasar",
+  "version": "v1",
+  "created_on": "2025-07-15 19:22:42.443607",
+  "created_by": "system:bootstrap",
+  "previous_version": null,
+  "tags": [],
+  "data": {
+    "object_type": "SemanticMapping",
+    "term": "IMB / PBG",
+    "standard_equivalent": "Building Construction Permit",
+    "used_in_modules": [
+      "mod-denpasar-construction-authorization"
+    ],
+    "notes": "IMB (old term) and PBG (new term under regulatory reform) are issued by Denpasar PUPR and legally required for any vertical development."
+  }
+}
